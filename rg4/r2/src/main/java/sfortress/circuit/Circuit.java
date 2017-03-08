@@ -9,6 +9,14 @@ public class Circuit {
     this.name = name;
   }
   
+  public void add(CircuitNode node) {
+    node.add(this);
+    nodes.add(node);
+  }
+  public void addVar(Var var) {
+    vars.add(var);
+  }
+  
   public Var getVar(String name) {
     Var v = null;
     for (int i = 0; i < vars.length; i++) {
