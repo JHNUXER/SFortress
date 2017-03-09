@@ -1,3 +1,11 @@
 {
   "type": "metal",
+  "density": 8.43,
+  "meltingPoint": 3427,
+  "boilingPoint": 7781,
+  "resistivity": 0.000000034,
+  "lustre": 100%,
+  "special-properties": [
+    "IMMOBILE","MAGNETOKINETIC","REFLECTS_ENERGY","ELECTROCONDUCTIVE","MAGNETOINERT","INDESTRUCTIBLE"
+  ]
 }
