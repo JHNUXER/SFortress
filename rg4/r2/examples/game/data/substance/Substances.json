@@ -1,6 +1,34 @@
 [
  {
   "type": "metal",
-  
+  "id": "substances.entnervium",
+  "name": "Entnervium",
+  "density": 38.94,
+  "resistivity": 0.000000012,
+  "melts": {
+   "fluid": "fluids.molten-entnervium",
+   "temp": 28.0,
+  }
+  "hardness": "INFINITY",
+  "luster": 0.0,
+  "malleability": 100,
+  "ductility":100,
+  "color": "000000"
+ },
+ {
+  "type": "metal",
+  "id": "substances.unzerstorium",
+  "name": "Unzerstorium",
+  "density": 8.43,
+  "resistivity": 0.000000034,
+  "melts": {
+   "fluid": "fluids.molten-unzerstorium",
+   "temp": 3427.0,
+  },
+  "hardness": "INFINITY",
+  "luster": 100.0,
+  "malleability": 0.0,
+  "ductility": 0.0,
+  "color": "fffff",
  }
 ]
