@@ -1,0 +1,27 @@
+{
+  "name": "Unnamed",
+  "tiles": [
+    {
+      "type": "Solid",
+      "name": "tiles.dirt",
+      "generation-height": [{"min":43,"max":74}],
+      "special-properies": [
+        
+      ],
+      "normal-render": {
+        "type": "uniform",
+        "image": "tiles.dirt"
+      },
+      "custom-render": {
+        "condition": "sProperties.hasGrass()",
+        "change": {
+          "top": "tiles.grass.top",
+          "front": "tiles.grass.side",
+          "back": "tiles.grass.side",
+          "left": "tiles.grass.side",
+          "right": "tiles.grass.side",
+        }
+      }
+    }
+  ]
+}
