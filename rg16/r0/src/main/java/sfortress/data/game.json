@@ -6,14 +6,18 @@
       "name": "tiles.dirt",
       "generation-height": [{"min":43,"max":74}],
       "special-properies": [
-        
+        {
+          "type": "boolean",
+          "name": "hasGrass",
+        }
       ],
       "normal-render": {
         "type": "uniform",
         "image": "tiles.dirt"
       },
       "custom-render": {
-        "condition": "sProperties.hasGrass()",
+        "condition": "sProperties.hasGrass",
+        "type": "add-layer",
         "change": {
           "top": "tiles.grass.top",
           "front": "tiles.grass.side",
@@ -22,6 +26,11 @@
           "right": "tiles.grass.side",
         }
       }
+    },
+    {
+      "type": "solid",
+      "name": "tiles.stone",
+      
     }
   ]
 }
