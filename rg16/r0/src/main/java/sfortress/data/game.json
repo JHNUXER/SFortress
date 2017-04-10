@@ -30,7 +30,11 @@
     {
       "type": "solid",
       "name": "tiles.stone",
-      
+      "generation-height": [{"min":0,"max":48}],
+      "normal-render": {
+        "type": "uniform",
+        "name": "tiles.dirt"
+      }
     }
   ]
 }
