@@ -1,0 +1,44 @@
+>> SETSCOPE @Tile.id "tiles.*";
+
+@Tile {
+  type "Solid";
+  id "stone";
+  name "Stone";
+  hardness 4.0f;
+  meltingPoint 900degC;
+  boilingPoint Null;
+  moltenForm "tiles.lava";
+  gasForm Null;    // Not Boilable (ingame at least)
+  Minable True --> {
+    time 1.2;
+    result "items.stone";
+  }
+}
+@Tile {
+  type "Dirt";
+  id "dirt";
+  name #ConditionalString {customProperties.hasGrass?"Grassy Dirt":"Dirt"};
+  hardness 1.8f;
+  meltingPoint Null;
+  boilingPoint Null;
+  $customProperties [
+    B:hasGrass,
+    F:setGrass(B:tr) {self.hasGrass=tr;}
+  ]
+  Minable True --> {
+    time 0.4;
+    result #ConditionalString {customProperties.hasGrass?"items.grassy-dirt":"items.dirt"};
+  }
+  tick() {
+    supertick();
+    if (customProperties.hydration > customProperties.liquifactionPoint) {
+      melt();
+    }
+  }
+  melt() {
+    replaceSelf("tiles.mud");
+  }
+}
+@Tile {
+  
+}
