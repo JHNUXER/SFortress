@@ -1,1 +1,32 @@
-
+{
+  "members": [
+    {
+      "name": {
+        "first": "Isabella",
+        "last": "Carthage"
+      },
+      "species": "Human",
+      "gender": "Female",
+      "age": 17,
+      "phz": {
+        
+      },
+      "armor": {
+        "layer-0": [
+          
+        ],
+        "layer-1": [
+          {
+            "name": "clothing.female.skirt.akl.",
+            "modifiers": [
+              
+            ]
+          }
+        ],
+        "layer-2": [
+          
+        ]
+      }
+    }
+  ]
+}
