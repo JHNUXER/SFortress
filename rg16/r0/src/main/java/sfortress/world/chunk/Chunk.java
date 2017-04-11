@@ -37,7 +37,7 @@ public class Chunk {
     int z = height;
     for (int y = 0; y < slots.length; y++) {
       for (int x = 0; x < slots[y].length; x++) {
-        graphics.drawImage(slots[y][x][z].draw(),0,0,null);
+        graphics.drawImage(slots[x][y][z].draw(),0,0,null);
       }
     }
     for (int i = 0; i < entities.size(); i++) {
